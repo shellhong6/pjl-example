@@ -4,10 +4,10 @@ const fs = require('fs')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const argv = yargs.argv
-const dir = argv.dir ? `demo${argv.dir}` : ''
+const dir = argv.dir ? argv.dir : ''
 
 const SRC_PATH = `../src/example/${dir}`
-const DIST_PATH = `../dist/${dir}`
+const DIST_PATH = `../dist`
 
 module.exports = {
   srcPath: path.join(__dirname, SRC_PATH),
