@@ -15,10 +15,16 @@ function createExpr (arr, t) {
   }
   return expr
 }
-
+function transformAttr (attrName) {
+  switch (attrName) {
+    case 'className':
+      return 'class'
+  }
+  return attrName
+}
 function createAttributesStr (attributes) {
   return attributes.map(function (attr) {
-    return ` ${attr.name.name}="${attr.value.value}"`
+    return ` ${transformAttr(attr.name.name)}="${attr.value.value}"`
   }).join('')
 }
 function createVisitor (t) {
