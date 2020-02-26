@@ -14,4 +14,4 @@ const a = <div className="container" data-id='id'>
     <span>2</span>
 </div>;
 `)
-console.log('code--', code)
+console.log('转换后代码--', code)
