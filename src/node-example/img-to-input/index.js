@@ -8,7 +8,6 @@ var handleJsx = function (source) {
   return result.code
 }
 
-let code = handleJsx(`<div><span>1</span></div>`)
-// let code = handleJsx(`<img/>`)
+let code = handleJsx(`<img/>`)
 console.log('转换前代码--', `<img/>`)
 console.log('转换后代码--', code)
