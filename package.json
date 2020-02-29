@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --config ./build/webpack.config.js",
-    "dev:helloworld": "webpack --config ./build/webpack.config.js --dir helloworld"
+    "dev:helloworld": "webpack --config ./build/webpack.config.js --dir helloworld",
+    "dev:logic": "webpack --config ./build/webpack.config.js --dir logic",
+    "dev:event": "webpack --config ./build/webpack.config.js --dir event"
   },
   "author": "shellhong",
   "license": "ISC",
